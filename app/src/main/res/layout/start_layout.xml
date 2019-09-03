@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/start_bg"
+    android:orientation="vertical">
+
+    <com.example.birthday.dateselector.DrawClock
+        android:layout_width="match_parent"
+        android:layout_height="350dp"/>
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="353dp"-->
+        <!--android:src="@drawable/clock"-->
+        <!--android:scaleX=".7"-->
+        <!--android:scaleY=".7"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+    <TextView
+        android:id="@+id/your_bir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_birthday"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/date_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+       <Space
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"/>    //用于适配,实际大小=指定大小+可用空间(即:屏幕大小-所有组件大小的和)*权重比例
+
+        <!--android:layout_gravity表示控件本身在父级中的对齐方式
+            android:gravity表示控件内部元素的对齐方式,如Button内部的文字,EditText内部的文字-->
+        <TextView
+            android:id="@+id/input_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/lightSkyBlue1"
+            android:textSize="30dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id = "@+id/choose_date_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/choose_date"
+        android:textSize="20sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+    <TextView
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="30sp"
+        android:textColor="@color/grey21"
+        android:text="@string/next"/>
+
+</LinearLayout>

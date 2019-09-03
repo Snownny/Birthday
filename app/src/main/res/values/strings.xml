@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Birthday</string>
+    <string name="your_birthday">你出生于</string>
+    <string name="choose_date">选择日期</string>
+
+    <string name="title">选择出生日期</string>
+    <string name="cancel">取消</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="week">周</string>
+    <string name="day1">天</string>
+    <string name="hour1">小时</string>
+    <string name="minute1">分钟</string>
+    <string name="hour2">点</string>
+
+    <string name="live">生之时</string>
+    <string name="die">死之钟</string>
+
+    <string name="has_been">你已经</string>
+    <string name="age">岁了</string>
+    <string name="in_the_world">在这个世界上，你已经存在</string>
+
+    <string name="guess">你猜测自己能活多少岁</string>
+    <string name="choose_age">选择年龄</string>
+
+    <string name="in_your_life">这是你一生中的</string>
+    <string name="you_can">剩下的日子里，你大约可以</string>
+    <string name="eat">吃</string>
+    <string name="meat">顿饭</string>
+    <string name="hug">拥抱爸爸妈妈</string>
+    <string name="times">次</string>
+    <string name="spend">度过</string>
+    <string name="weekends">次周末</string>
+    <string name="say">和你爱的人说</string>
+    <string name="good_morning">次早安</string>
+
+    <string name="next">下一步></string>
+    <string name="click_try">点我试一试</string>
+
+</resources>

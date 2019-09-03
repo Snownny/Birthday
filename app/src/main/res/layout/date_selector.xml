@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="25dp"
+        >
+
+        <TextView
+            android:id="@+id/choose_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/skyBlue1"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/title"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/skyBlue1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <com.example.birthday.dateselector.DateSelectorView
+            android:id="@+id/ds_year"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/grey41"
+            android:textSize="20sp"/>
+
+        <com.example.birthday.dateselector.DateSelectorView
+            android:id="@+id/ds_month"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/grey41"
+            android:textSize="20sp"
+            />
+
+        <com.example.birthday.dateselector.DateSelectorView
+            android:id="@+id/ds_day"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/grey41"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey41"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ds_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:text="@string/cancel"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey41"/>
+
+        <TextView
+            android:id="@+id/ds_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:text="@string/commit"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey41"/>
+
+</LinearLayout>
